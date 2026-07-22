@@ -77,18 +77,12 @@ export default function HomePage() {
                 key={item.id}
                 className="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(93,64,55,0.08)] group hover:shadow-[0_8px_30px_rgba(93,64,55,0.12)] transition-shadow duration-300"
               >
-                <div className="h-56 md:h-64 overflow-hidden relative bg-surface-variant flex items-center justify-center">
-                  {item.image ? (
-                    <img
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      src={item.image}
-                      alt={item.name}
-                    />
-                  ) : (
-                    <span className="material-symbols-outlined text-5xl text-outline/50">
-                      restaurant
-                    </span>
-                  )}
+                <div className="h-56 md:h-64 overflow-hidden relative bg-surface-variant">
+                  <img
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    src={item.image}
+                    alt={item.name}
+                  />
                 </div>
                 <div className="p-md space-y-3">
                   <h3 className="font-headline text-xl font-semibold text-on-surface">
@@ -128,41 +122,41 @@ export default function HomePage() {
             <p className="font-body text-base text-on-surface-variant font-bold">
               Tersedia di:
             </p>
-            <div className="grid grid-cols-3 gap-3 max-w-lg mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-lg mx-auto w-full">
               <a
                 href="https://gofood.link/u/13bNG1"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-surface-container-lowest border border-outline/20 px-3 py-3 rounded-xl hover:border-primary transition-colors shadow-sm flex items-center justify-center"
+                className="bg-surface-container-lowest border border-outline/20 rounded-xl hover:border-primary transition-colors shadow-sm flex items-center justify-center px-3 py-3"
               >
                 <img
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvLXGz1bQDBBTkIsUgyfzUq4-_GbyqHP9ohoijG8Pq0DcJxn9h7wXaRTz74XnGJVsBp6AEBHy4R7bMYgzdV-n0CD6cuhN4Xv2o_KCqK3uWS8lg_dDMg4auuV8-U8AHi3-wgjhwpATfHaJ8xsEJ6XeTpIMUnElAnbYN9Pi2F_g8AITRRpMIfu-4KtiNgGZ-yfizAq0ivzlXBIZzu9miEMq4nL2tSnZciU5f0RZzG7IkAazrQ5rUz2f3Q0L3nuLUuvYQWqk"
+                  src="/images/Gofood Logo.png"
                   alt="GoFood"
-                  className="h-10 w-auto object-contain"
+                  className="h-8 w-auto object-contain"
                 />
               </a>
               <a
                 href="https://r.grab.com/g/6-20250625_072318_12ff817c2cf34740a8acd6a14b7eb2c3_MEXMPS-6-C2WYJ34XLEX3GJ"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-surface-container-lowest border border-outline/20 px-3 py-3 rounded-xl hover:border-primary transition-colors shadow-sm flex items-center justify-center"
+                className="bg-surface-container-lowest border border-outline/20 rounded-xl hover:border-primary transition-colors shadow-sm flex items-center justify-center px-3 py-3"
               >
                 <img
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuA88KX_cTA-VBF8IyI6goxOvpKw1-Yl8R3mlYXwiXgGUQWYB3S7dy8lGtWIDAG1e_R3FGQl6bOuUjaAXbGcXN0Ag58bGgUCm3EhNukGEuU4Fl4wJQf9YGS0i2H4-BakW_bE95AEFd86Ntt8K10uV0ZmywnsFc4BxYH-TP_vds8L6TbmfU_Wnr2wtOijeVyAbgz9uZ7V3lAFKcriGfpOTcVusD8E8Wv7ZzSvKwkXFvVXQrem0GfEwKNKoxSyJ57SavjX9pQ"
+                  src="/images/Grabfood Logo.png"
                   alt="GrabFood"
-                  className="h-10 w-auto object-contain"
+                  className="h-8 w-auto object-contain"
                 />
               </a>
               <a
                 href="https://shopee.co.id/universal-link/now-food/shop/1123676?deep_and_deferred=1&shareChannel=copy_link"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-surface-container-lowest border border-outline/20 px-3 py-3 rounded-xl hover:border-primary transition-colors shadow-sm flex items-center justify-center"
+                className="bg-surface-container-lowest border border-outline/20 rounded-xl hover:border-primary transition-colors shadow-sm flex items-center justify-center px-3 py-3"
               >
                 <img
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAt4zqzNyqEzOr-RaiwmirzaTndneeDufzBSMXmnZj9IAcJSqobeEHEdAY187uTTmty6qA64iHih9rRSZxM9wQhrOC1yuvkuO8T6A-RkAaSc-5qgsIJYJUpFvNh8H0bRYMnMz9-ltLAxns7YvHQMEghXQQ0OkDuL700Is3py6w4mafA9pxabcf-QUobDMBj4vVJ0gt43PFbwy75WNO2wCrcc3wJfNFUbm79jw_eqeR6Zin2RHWfRhxvzAubxvO0PaNGBEI"
+                  src="/images/ShopeeFood Logo.png"
                   alt="ShopeeFood"
-                  className="h-10 w-auto object-contain"
+                  className="h-8 w-auto object-contain"
                 />
               </a>
             </div>

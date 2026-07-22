@@ -17,8 +17,8 @@ export default function MenuPage() {
     <>
       <Navbar />
 
-      <main className="flex-grow max-w-7xl mx-auto w-full px-margin-mobile md:px-margin-desktop py-xl flex flex-col gap-xl mt-[72px]">
-        <section className="flex flex-col items-center gap-md text-center pt-xl">
+      <main className="flex-grow max-w-7xl mx-auto w-full px-margin-mobile md:px-margin-desktop flex flex-col gap-xl mt-[72px] pb-xl">
+        <section className="flex flex-col items-center gap-4 text-center pt-8">
           <h1 className="font-headline text-[28px] md:text-[40px] font-extrabold text-primary">
             Our Menu
           </h1>
@@ -27,7 +27,7 @@ export default function MenuPage() {
             tradition.
           </p>
 
-          <div className="flex flex-wrap justify-center gap-3 mt-3">
+          <div className="flex flex-wrap justify-center gap-3">
             {categories.map((cat) => (
               <button
                 key={cat.id}
@@ -58,7 +58,7 @@ export default function MenuPage() {
               key={item.id}
               className="bg-surface-container-lowest rounded-xl shadow-[0_4px_20px_rgba(93,64,55,0.08)] overflow-hidden flex flex-col group hover:shadow-[0_8px_30px_rgba(93,64,55,0.12)] transition-shadow duration-300"
             >
-              <div className="relative h-48 w-full overflow-hidden">
+              <div className="relative h-48 w-full overflow-hidden bg-surface-variant">
                 <img
                   src={item.image}
                   alt={item.name}

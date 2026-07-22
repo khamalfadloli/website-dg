@@ -14,7 +14,7 @@ export const menuItems: MenuItem[] = [
     description: 'Nasi gurih khas Solo dengan santan, daun salam, dan sereh. Disajikan hangat dengan lauk pilihan.',
     price: 16000,
     category: 'makanan',
-    image: '',
+    image: '/images/Nasi Liwet.jpg',
   },
   {
     id: 'lontong-opor',
@@ -22,7 +22,7 @@ export const menuItems: MenuItem[] = [
     description: 'Lontong lembut dengan kuah opor ayam santan kental, dilengkapi sambal goreng kentang dan kerupuk.',
     price: 16000,
     category: 'makanan',
-    image: '',
+    image: '/images/Lontong Opor.jpg',
   },
   {
     id: 'lontong-sayur',
@@ -30,15 +30,15 @@ export const menuItems: MenuItem[] = [
     description: 'Lontong dengan sayur labu siam dan kuah santan kuning, telur rebus, dan sambal kemiri.',
     price: 16000,
     category: 'makanan',
-    image: '',
+    image: '/images/Lontong Sayur.jpg',
   },
   {
     id: 'nasi-uduk',
     name: 'Nasi Uduk',
-    description: 'Nasi uduk Betawi harum dengan lapisan goreng, bihun goreng, orek tempe, kering kentang, dan sambal.',
+    description: 'Nasi uduk Betawi harum dengan lauk: bihun goreng, orek tempe, kering kentang, dan sambal.',
     price: 16000,
     category: 'makanan',
-    image: '',
+    image: '/images/Nasi Uduk.jpg',
   },
   {
     id: 'nasi-langgi',
@@ -46,7 +46,7 @@ export const menuItems: MenuItem[] = [
     description: 'Nasi langgi khas Solo dengan aneka lauk: sayur gudeg, suwiran ayam, krecek, telur pindang, dan sambal goreng kentang.',
     price: 16000,
     category: 'makanan',
-    image: '',
+    image: '/images/Nasi Langgi.jpg',
   },
   {
     id: 'garang-asem',
@@ -54,15 +54,15 @@ export const menuItems: MenuItem[] = [
     description: 'Ayam kampung dibungkus daun pisang dengan kuah asam pedas segar, lengkap dengan cabai dan tomat.',
     price: 20000,
     category: 'makanan',
-    image: '',
+    image: '/images/Garang Asem.jpg',
   },
   {
     id: 'gudeg',
-    name: 'Gudeg',
+    name: 'Nasi Gudeg',
     description: 'Gudeg nangka muda manis khas Jogja, disajikan dengan kuah santan, ayam suwir, telur pindang, dan krecek.',
     price: 20000,
     category: 'makanan',
-    image: '',
+    image: '/images/Nasi Gudeg.jpg',
   },
   {
     id: 'bubur-ayam',
@@ -70,7 +70,7 @@ export const menuItems: MenuItem[] = [
     description: 'Bubur ayam gurih dengan topping lengkap: suwiran ayam, cakwe, kacang kedelai, bawang goreng, dan seledri.',
     price: 12000,
     category: 'makanan',
-    image: '',
+    image: '/images/Bubur Ayam.jpeg',
   },
   {
     id: 'selat-solo',
@@ -78,7 +78,7 @@ export const menuItems: MenuItem[] = [
     description: 'Steak ala Solo: daging sapi empuk dengan kuah kental manis asam, ditemani sayuran rebus dan kentang goreng.',
     price: 20000,
     category: 'makanan',
-    image: '',
+    image: '/images/Selat Solo.jpg',
   },
   {
     id: 'nasi-ayam',
@@ -86,7 +86,7 @@ export const menuItems: MenuItem[] = [
     description: 'Nasi putih hangat dengan ayam goreng/ungkep bumbu tradisional, sambal, lalapan, dan kerupuk.',
     price: 20000,
     category: 'makanan',
-    image: '',
+    image: '/images/Nasi Ayam.jpeg',
   },
   {
     id: 'ayam-gecek',
@@ -94,7 +94,15 @@ export const menuItems: MenuItem[] = [
     description: 'Ayam suwir pedas khas Lombok dengan plecing kangkung, nasi hangat, dan sambal tomat segar.',
     price: 20000,
     category: 'makanan',
-    image: '',
+    image: '/images/Ayam Gecek.jpg',
+  },
+  {
+    id: 'nasi-goreng-rumahan',
+    name: 'Nasi Goreng Rumahan',
+    description: 'Nasi goreng rumahan dengan bumbu sederhana, telur, sosis, dan kerupuk. Cita rasa masakan ibu.',
+    price: 15000,
+    category: 'makanan',
+    image: '/images/Nasi Goreng Rumahan.jpeg',
   },
 ]
 

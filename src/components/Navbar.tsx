@@ -21,7 +21,8 @@ export default function Navbar() {
       <div className="max-w-full mx-auto flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 transition-all duration-300">
         <Link
           href="/"
-          className="font-headline text-[22px] md:text-[26px] font-bold text-primary tracking-tight"
+          className="font-headline text-[22px] md:text-[26px] font-bold tracking-tight"
+          style={{ color: "#920000" }}
         >
           Dapoer Girli
         </Link>
@@ -35,9 +36,10 @@ export default function Navbar() {
                 href={link.href}
                 className={`font-body text-sm font-bold transition-colors duration-200 ${
                   isActive
-                    ? "text-primary border-b-2 border-primary pb-1"
-                    : "text-on-surface-variant hover:text-primary"
+                    ? "border-b-2 pb-1"
+                    : "hover:opacity-80"
                 }`}
+                style={{ color: "#920000", borderColor: "#920000" }}
               >
                 {link.label}
               </Link>
@@ -56,7 +58,8 @@ export default function Navbar() {
           </a>
 
           <button
-            className="md:hidden text-on-surface p-1"
+            className="md:hidden p-1"
+            style={{ color: "#920000" }}
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle menu"
           >
@@ -76,11 +79,8 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className={`block font-body text-sm font-bold py-2 ${
-                  isActive
-                    ? "text-primary"
-                    : "text-on-surface-variant hover:text-primary"
-                }`}
+                className="block font-body text-sm font-bold py-2"
+                style={{ color: "#920000" }}
               >
                 {link.label}
               </Link>
