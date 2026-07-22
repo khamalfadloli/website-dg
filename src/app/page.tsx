@@ -1,7 +1,35 @@
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 import { menuItems } from "@/lib/menu-data"
+import Image from "next/image"
 import Link from "next/link"
+
+const merchantLinks = [
+  {
+    name: "GoFood",
+    href: "https://gofood.link/u/13bNG1",
+    logo: "/images/gofood.png",
+    width: 536,
+    height: 173,
+    className: "h-9 w-auto",
+  },
+  {
+    name: "GrabFood",
+    href: "https://r.grab.com/g/6-20250625_072318_12ff817c2cf34740a8acd6a14b7eb2c3_MEXMPS-6-C2WYJ34XLEX3GJ",
+    logo: "/images/grabfood.png",
+    width: 950,
+    height: 950,
+    className: "h-[70px] w-auto",
+  },
+  {
+    name: "ShopeeFood",
+    href: "https://shopee.co.id/universal-link/now-food/shop/1123676",
+    logo: "/images/shopeefood.png",
+    width: 3225,
+    height: 1185,
+    className: "h-10 w-auto",
+  },
+]
 
 export default function HomePage() {
   const featuredItems = menuItems.slice(0, 3)
@@ -122,43 +150,25 @@ export default function HomePage() {
             <p className="font-body text-base text-on-surface-variant font-bold">
               Tersedia di:
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-lg mx-auto w-full">
-              <a
-                href="https://gofood.link/u/13bNG1"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-surface-container-lowest border border-outline/20 rounded-xl hover:border-primary transition-colors shadow-sm flex items-center justify-center px-3 py-3"
-              >
-                <img
-                  src="/images/GoFood Logo.png"
-                  alt="GoFood"
-                  className="h-8 w-auto object-contain"
-                />
-              </a>
-              <a
-                href="https://r.grab.com/g/6-20250625_072318_12ff817c2cf34740a8acd6a14b7eb2c3_MEXMPS-6-C2WYJ34XLEX3GJ"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-surface-container-lowest border border-outline/20 rounded-xl hover:border-primary transition-colors shadow-sm flex items-center justify-center px-3 py-3"
-              >
-                <img
-                  src="/images/GrabFood Logo.png"
-                  alt="GrabFood"
-                  className="h-8 w-auto object-contain"
-                />
-              </a>
-              <a
-                href="https://shopee.co.id/universal-link/now-food/shop/1123676?deep_and_deferred=1&shareChannel=copy_link"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-surface-container-lowest border border-outline/20 rounded-xl hover:border-primary transition-colors shadow-sm flex items-center justify-center px-3 py-3"
-              >
-                <img
-                  src="/images/ShopeeFood Logo.png"
-                  alt="ShopeeFood"
-                  className="h-8 w-auto object-contain"
-                />
-              </a>
+            <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-5 max-w-2xl mx-auto">
+              {merchantLinks.map((merchant) => (
+                <a
+                  key={merchant.name}
+                  href={merchant.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Pesan lewat ${merchant.name}`}
+                  className="min-h-20 bg-surface-container-lowest border border-outline/20 px-6 py-4 rounded-xl hover:border-primary hover:shadow-md transition-all shadow-sm inline-flex items-center justify-center"
+                >
+                  <Image
+                    src={merchant.logo}
+                    alt={merchant.name}
+                    width={merchant.width}
+                    height={merchant.height}
+                    className={`${merchant.className} object-contain`}
+                  />
+                </a>
+              ))}
             </div>
           </div>
         </section>
