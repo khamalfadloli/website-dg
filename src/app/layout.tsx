@@ -25,6 +25,9 @@ export const metadata: Metadata = {
     description:
       "Sarapan otentik Nusantara untuk mengawali harimu. Reservasi & order online.",
   },
+  icons: {
+    icon: "/favicon.png",
+  },
 }
 
 export default function RootLayout({
