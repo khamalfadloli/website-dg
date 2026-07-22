@@ -49,7 +49,7 @@ export default function Navbar() {
 
         <div className="flex items-center gap-sm">
           <a
-            href="https://wa.me/628956024331000"
+            href="https://wa.me/62895602433100"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-primary-container text-on-primary-container text-sm font-bold px-5 py-2 rounded-full hover:bg-primary-fixed transition-all active:scale-95 shadow-sm hidden md:block"
@@ -87,7 +87,7 @@ export default function Navbar() {
             )
           })}
           <a
-            href="https://wa.me/628956024331000"
+            href="https://wa.me/62895602433100"
             target="_blank"
             rel="noopener noreferrer"
             className="block bg-primary-container text-on-primary-container text-center text-sm font-bold px-5 py-3 rounded-full mt-2"

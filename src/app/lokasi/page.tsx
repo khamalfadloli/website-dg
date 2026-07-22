@@ -39,12 +39,12 @@ export default function LokasiPage() {
                 <span className="material-symbols-outlined text-primary">
                   call
                 </span>
-                <span>0895-6024-331000</span>
+                <span>0895-6024-33100</span>
               </p>
             </div>
             <div className="pt-3">
               <a
-                href="https://wa.me/628956024331000"
+                href="https://wa.me/62895602433100"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-green-600 text-white font-body text-sm font-bold px-6 py-3 rounded-full hover:bg-green-700 transition-colors shadow-sm"

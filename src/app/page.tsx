@@ -96,7 +96,7 @@ export default function HomePage() {
                       Rp {item.price.toLocaleString("id-ID")}
                     </span>
                     <a
-                      href="https://wa.me/628956024331000"
+                      href="https://wa.me/62895602433100"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="bg-primary text-white text-xs font-bold px-4 py-2 rounded-full hover:bg-primary-fixed-dim hover:text-on-primary-fixed transition-all active:scale-95"
@@ -130,7 +130,7 @@ export default function HomePage() {
                 className="bg-surface-container-lowest border border-outline/20 rounded-xl hover:border-primary transition-colors shadow-sm flex items-center justify-center px-3 py-3"
               >
                 <img
-                  src="/images/Gofood Logo.png"
+                  src="/images/GoFood Logo.png"
                   alt="GoFood"
                   className="h-8 w-auto object-contain"
                 />
@@ -142,7 +142,7 @@ export default function HomePage() {
                 className="bg-surface-container-lowest border border-outline/20 rounded-xl hover:border-primary transition-colors shadow-sm flex items-center justify-center px-3 py-3"
               >
                 <img
-                  src="/images/Grabfood Logo.png"
+                  src="/images/GrabFood Logo.png"
                   alt="GrabFood"
                   className="h-8 w-auto object-contain"
                 />
@@ -193,12 +193,12 @@ export default function HomePage() {
                   <span className="material-symbols-outlined text-primary">
                     call
                   </span>
-                  <span>0895-6024-331000</span>
+                  <span>0895-6024-33100</span>
                 </p>
               </div>
               <div className="pt-3">
                 <a
-                  href="https://wa.me/628956024331000"
+                  href="https://wa.me/62895602433100"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-green-600 text-white font-body text-sm font-bold px-6 py-3 rounded-full hover:bg-green-700 transition-colors shadow-sm"

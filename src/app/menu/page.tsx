@@ -77,7 +77,7 @@ export default function MenuPage() {
                     Rp {item.price.toLocaleString("id-ID")}
                   </span>
                   <a
-                    href="https://wa.me/628956024331000"
+                    href="https://wa.me/62895602433100"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-primary text-white text-xs font-bold px-4 py-2 rounded-full hover:bg-primary-fixed-dim hover:text-on-primary-fixed transition-all active:scale-95"
