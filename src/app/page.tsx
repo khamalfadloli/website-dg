@@ -43,8 +43,7 @@ export default function HomePage() {
           <div
             className="w-full h-full bg-cover bg-center"
             style={{
-              backgroundImage:
-                "url('https://lh3.googleusercontent.com/aida-public/AB6AXuAHJJ1Tqkcoi9kHBT-sciu3yDeKGqCc36fM6QM1wdkEwO-86JkZCZC8LL03pBWvfc_EzECuQWYypi2VQemnPo8V6898EgNod5SKPvRkU_vq-PiMqqGqSDHxpvqoNCDp_Uo4nUhRKGj5RI3YhfqU9Tpe5xBlH-RvDmuPd-IMe9GXiiDPzdmkkUszF3zva8Wnt0Daz5-jqBHaDIVwZYRh-H11Nzn1nFgi8BVvq-PAIzAnq14HrTb0v5DSfg')",
+              backgroundImage: "url('/images/hero-bg.jpg')",
             }}
           />
           <div className="absolute inset-0 bg-black/40" />
