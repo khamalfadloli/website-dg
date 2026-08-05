@@ -29,8 +29,8 @@ export default function TentangPage() {
               bahan-bahan segar dan rempah pilihan.
             </p>
             <p className="font-body text-base text-on-surface-variant leading-relaxed">
-              Sejak 2019, kami telah melayani para pecinta sarapan di Jakarta
-              Selatan. Dari dapur kecil kami, kami ingin membuktikan bahwa
+              Sejak 2019, kami telah melayani para pecinta sarapan di
+              Yogyakarta. Dari dapur kecil kami, kami ingin membuktikan bahwa
               sarapan tradisional Indonesia bisa dinikmati dengan cara modern
               dan praktis.
             </p>

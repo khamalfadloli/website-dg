@@ -64,6 +64,10 @@ export default function MenuPage() {
                   alt={item.name}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
+                <span className="absolute top-3 left-3 bg-primary-container text-on-primary-container text-[11px] font-bold px-2.5 py-1 rounded-full shadow-sm">
+                  {categories.find((c) => c.id === item.category)?.label ??
+                    item.category}
+                </span>
               </div>
               <div className="p-md flex flex-col flex-grow gap-3">
                 <h3 className="font-headline text-xl font-semibold text-on-surface">

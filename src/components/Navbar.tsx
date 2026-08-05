@@ -21,8 +21,7 @@ export default function Navbar() {
       <div className="max-w-full mx-auto flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 transition-all duration-300">
         <Link
           href="/"
-          className="font-headline text-[22px] md:text-[26px] font-bold tracking-tight"
-          style={{ color: "#920000" }}
+          className="font-headline text-[22px] md:text-[26px] font-bold tracking-tight text-primary"
         >
           Dapoer Girli
         </Link>
@@ -34,12 +33,11 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`font-body text-sm font-bold transition-colors duration-200 ${
+                className={`font-body text-sm font-bold transition-colors duration-200 border-primary text-primary ${
                   isActive
                     ? "border-b-2 pb-1"
-                    : "hover:opacity-80"
+                    : "border-b-2 border-transparent hover:opacity-80"
                 }`}
-                style={{ color: "#920000", borderColor: "#920000" }}
               >
                 {link.label}
               </Link>
@@ -58,8 +56,7 @@ export default function Navbar() {
           </a>
 
           <button
-            className="md:hidden p-1"
-            style={{ color: "#920000" }}
+            className="md:hidden p-1 text-primary"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle menu"
           >
@@ -72,20 +69,16 @@ export default function Navbar() {
 
       {mobileOpen && (
         <div className="md:hidden bg-surface border-t border-outline-variant/20 px-margin-mobile pb-5 pt-3 space-y-3">
-          {navLinks.map((link) => {
-            const isActive = pathname === link.href
-            return (
-              <Link
-                key={link.href}
-                href={link.href}
-                onClick={() => setMobileOpen(false)}
-                className="block font-body text-sm font-bold py-2"
-                style={{ color: "#920000" }}
-              >
-                {link.label}
-              </Link>
-            )
-          })}
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              onClick={() => setMobileOpen(false)}
+              className="block font-body text-sm font-bold py-2 text-primary"
+            >
+              {link.label}
+            </Link>
+          ))}
           <a
             href="https://wa.me/62895602433100"
             target="_blank"

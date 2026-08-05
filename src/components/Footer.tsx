@@ -44,7 +44,9 @@ export default function Footer() {
           <ul className="space-y-2">
             <li>
               <a
-                href="#"
+                href="https://gofood.link/u/13bNG1"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="font-body text-sm text-on-surface-variant hover:text-primary transition-all opacity-80 hover:opacity-100"
               >
                 GoFood
@@ -52,7 +54,9 @@ export default function Footer() {
             </li>
             <li>
               <a
-                href="#"
+                href="https://r.grab.com/g/6-20250625_072318_12ff817c2cf34740a8acd6a14b7eb2c3_MEXMPS-6-C2WYJ34XLEX3GJ"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="font-body text-sm text-on-surface-variant hover:text-primary transition-all opacity-80 hover:opacity-100"
               >
                 GrabFood
@@ -60,7 +64,9 @@ export default function Footer() {
             </li>
             <li>
               <a
-                href="#"
+                href="https://shopee.co.id/universal-link/now-food/shop/1123676"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="font-body text-sm text-on-surface-variant hover:text-primary transition-all opacity-80 hover:opacity-100"
               >
                 ShopeeFood
@@ -98,7 +104,8 @@ export default function Footer() {
 
       <div className="max-w-7xl mx-auto mt-xl pt-md border-t border-outline-variant/30 text-center">
         <p className="font-body text-xs text-on-surface-variant opacity-80">
-          &copy; 2024 Dapoer Girli. Cita Rasa Nusantara Sejak 2019.
+          &copy; {new Date().getFullYear()} Dapoer Girli. Cita Rasa Nusantara
+          Sejak 2019.
         </p>
       </div>
     </footer>

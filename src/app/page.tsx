@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
-import { menuItems } from "@/lib/menu-data"
+import { menuItems, categories } from "@/lib/menu-data"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -55,6 +55,10 @@ export default function HomePage() {
             className="w-48 h-48 md:w-64 md:h-64 object-contain drop-shadow-xl bg-white/10 rounded-full p-4 backdrop-blur-sm"
             src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyfdXDOnLMBAEfo1pAlE3yoAeancAarX0X-o8D3Hxc9h3OVfEMqjio9XVllKDx14Qhbn8r2eXsGC6iApCOyA2TIqqBSKVJhbpWbDpSqlHfWeDJk2KPwo8BVr63D0JBlOIPe_ZRd1RQPPAwpU5LrCfeZTzXWnj5k7d6WrwAE8j1Yo-G-cgPX7ZvX6ySkcONLNYVyurYiuoQyNBLnRRL_cl05K9Fb6tO5TxltyB_SJuliN0CsgEn51AzqN1azI7I3SVjYMc"
           />
+          <span className="inline-flex items-center gap-2 bg-white/15 backdrop-blur-sm border border-white/25 text-white text-xs md:text-sm font-bold px-4 py-1.5 rounded-full">
+            <span className="material-symbols-outlined text-base">schedule</span>
+            Buka Setiap Hari · 06.00 – 14.00 WIB
+          </span>
           <h1 className="font-headline text-[32px] md:text-[40px] font-extrabold leading-tight text-white drop-shadow-lg">
             Sarapan Otentik Nusantara
             <br />
@@ -64,12 +68,50 @@ export default function HomePage() {
             Cita Rasa Nusantara Sejak 2019. Nikmati kehangatan pagi dengan resep
             warisan yang menggugah selera.
           </p>
-          <Link
-            href="/menu"
-            className="bg-primary-container text-on-primary-container font-body text-sm font-bold px-10 py-3 rounded-full shadow-lg hover:-translate-y-1 transition-all"
-          >
-            Lihat Menu
-          </Link>
+          <div className="flex flex-wrap items-center justify-center gap-sm">
+            <Link
+              href="/menu"
+              className="bg-primary-container text-on-primary-container font-body text-sm font-bold px-10 py-3 rounded-full shadow-lg hover:-translate-y-1 transition-all"
+            >
+              Lihat Menu
+            </Link>
+            <a
+              href="https://wa.me/62895602433100"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white/15 backdrop-blur-sm text-white border border-white/40 font-body text-sm font-bold px-10 py-3 rounded-full shadow-lg hover:-translate-y-1 hover:bg-white/25 transition-all"
+            >
+              Order via WhatsApp
+            </a>
+          </div>
+          <div className="flex flex-wrap items-center justify-center gap-md md:gap-lg text-white pt-2">
+            <div className="text-center">
+              <p className="font-headline text-2xl md:text-3xl font-bold">
+                12+
+              </p>
+              <p className="font-body text-xs md:text-sm text-surface-container/90">
+                Menu Otentik
+              </p>
+            </div>
+            <div className="w-px h-10 bg-white/30 hidden md:block" />
+            <div className="text-center">
+              <p className="font-headline text-2xl md:text-3xl font-bold">
+                2019
+              </p>
+              <p className="font-body text-xs md:text-sm text-surface-container/90">
+                Melayani Sejak
+              </p>
+            </div>
+            <div className="w-px h-10 bg-white/30 hidden md:block" />
+            <div className="text-center">
+              <p className="font-headline text-2xl md:text-3xl font-bold">
+                Warisan
+              </p>
+              <p className="font-body text-xs md:text-sm text-surface-container/90">
+                Resep Keluarga
+              </p>
+            </div>
+          </div>
         </div>
       </header>
 
@@ -110,6 +152,10 @@ export default function HomePage() {
                     src={item.image}
                     alt={item.name}
                   />
+                  <span className="absolute top-3 left-3 bg-primary-container text-on-primary-container text-[11px] font-bold px-2.5 py-1 rounded-full shadow-sm">
+                    {categories.find((c) => c.id === item.category)?.label ??
+                      item.category}
+                  </span>
                 </div>
                 <div className="p-md space-y-3">
                   <h3 className="font-headline text-xl font-semibold text-on-surface">
