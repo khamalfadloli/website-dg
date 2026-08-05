@@ -1,5 +1,13 @@
+import type { Metadata } from "next"
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
+
+export const metadata: Metadata = {
+  title:
+    "Lokasi & Jam Buka - Jl. Tegal Panggung no.30 Danurejan Yogyakarta | Dapoer Girli",
+  description:
+    "Dapoer Girli beralamat di Jl. Tegal Panggung no.30, Danurejan, Yogyakarta. Buka setiap hari 05.00-13.00 WIB. Lihat peta dan petunjuk arah.",
+}
 
 export default function LokasiPage() {
   return (

@@ -1,5 +1,12 @@
+import type { Metadata } from "next"
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
+
+export const metadata: Metadata = {
+  title: "Tentang Kami - Resep Warisan Sejak 2019 | Dapoer Girli",
+  description:
+    "Cerita Dapoer Girli: warung sarapan di Yogyakarta yang menyajikan resep warisan Nusantara sejak 2019 dengan cita rasa homemade.",
+}
 
 export default function TentangPage() {
   return (
