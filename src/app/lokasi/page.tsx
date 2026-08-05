@@ -33,7 +33,7 @@ export default function LokasiPage() {
                 <span className="material-symbols-outlined text-primary">
                   schedule
                 </span>
-                <span>Buka Setiap Hari: 06.00 - 14.00 WIB</span>
+                <span>Buka Setiap Hari: 05.00 - 13.00 WIB</span>
               </p>
               <p className="flex items-center gap-2">
                 <span className="material-symbols-outlined text-primary">

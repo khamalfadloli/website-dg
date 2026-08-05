@@ -3,8 +3,8 @@ export interface MenuItem {
   name: string
   description: string
   price: number
-  category: 'makanan' | 'minuman' | 'snack' | 'dessert'
-  image: string
+  category: 'makanan' | 'minuman' | 'aneka-es' | 'snack' | 'dessert'
+  image: string | null
 }
 
 export const menuItems: MenuItem[] = [
@@ -104,12 +104,133 @@ export const menuItems: MenuItem[] = [
     category: 'makanan',
     image: '/images/Nasi Goreng Rumahan.jpeg',
   },
+  {
+    id: 'es-teh',
+    name: 'Es Teh',
+    description: 'Tersedia juga dalam versi panas.',
+    price: 3000,
+    category: 'minuman',
+    image: '/images/Es Teh.png',
+  },
+  {
+    id: 'es-jeruk',
+    name: 'Es Jeruk',
+    description: 'Tersedia juga dalam versi panas.',
+    price: 4000,
+    category: 'minuman',
+    image: '/images/Es Jeruk.png',
+  },
+  {
+    id: 'es-lemon-tea',
+    name: 'Es Lemon Tea',
+    description: 'Tersedia juga dalam versi panas.',
+    price: 5000,
+    category: 'minuman',
+    image: '/images/Es Lemon Tea.png',
+  },
+  {
+    id: 'susu-putih',
+    name: 'Susu Putih',
+    description: 'Tersedia dalam versi es maupun panas.',
+    price: 5000,
+    category: 'minuman',
+    image: '/images/Susu Putih.png',
+  },
+  {
+    id: 'susu-coklat',
+    name: 'Susu Coklat',
+    description: 'Tersedia dalam versi es maupun panas.',
+    price: 5000,
+    category: 'minuman',
+    image: '/images/Susu Coklat.png',
+  },
+  {
+    id: 'kopi-hitam',
+    name: 'Kopi Hitam',
+    description: 'Hanya disajikan panas.',
+    price: 6000,
+    category: 'minuman',
+    image: '/images/Kopi Hitam.png',
+  },
+  {
+    id: 'lychee-tea',
+    name: 'Lychee Tea',
+    description: 'Hanya disajikan dingin/es.',
+    price: 8000,
+    category: 'minuman',
+    image: '/images/Lychee Tea.png',
+  },
+  {
+    id: 'es-buah',
+    name: 'Es Buah',
+    description: 'Campuran buah segar dengan sirup dan es serut.',
+    price: 10000,
+    category: 'aneka-es',
+    image: '/images/Es Buah.jpeg',
+  },
+  {
+    id: 'es-campur',
+    name: 'Es Campur',
+    description: 'Aneka isian lengkap dengan sirup manis dan es serut.',
+    price: 12000,
+    category: 'aneka-es',
+    image: '/images/Es Campur.jpeg',
+  },
+  {
+    id: 'es-dawet',
+    name: 'Es Dawet',
+    description: 'Cendol kenyal dengan santan dan gula merah. Tersedia porsi besar (upsize) 8.000.',
+    price: 5000,
+    category: 'aneka-es',
+    image: '/images/Es Dawet.jpeg',
+  },
+  {
+    id: 'es-degan',
+    name: 'Es Degan',
+    description: 'Segar dengan daging kelapa muda dan sirup gula merah.',
+    price: 8000,
+    category: 'aneka-es',
+    image: '/images/Es Degan.jpeg',
+  },
+  {
+    id: 'es-kolang-kaling',
+    name: 'Es Kolang-Kaling',
+    description: 'Kenyal, manis, dan menyegarkan dengan sirup gula.',
+    price: 6000,
+    category: 'aneka-es',
+    image: '/images/Es Kolang-Kaling.jpeg',
+  },
+  {
+    id: 'jasuke',
+    name: 'Jasuke',
+    description: 'Jagung manis, susu, keju, dan mentega yang creamy.',
+    price: 10000,
+    category: 'snack',
+    image: '/images/Jasuke.jpg',
+  },
+  {
+    id: 'risol-mayo',
+    name: 'Risol Mayo',
+    description: 'Risol goreng renyah dengan isian mayones gurih. Satu porsi isi 4.',
+    price: 12000,
+    category: 'snack',
+    image: '/images/Risol Mayo.jpg',
+  },
+  {
+    id: 'bolen-pisang-coklat',
+    name: 'Bolen Pisang Coklat',
+    description: 'Bolu berlapis renyah isi pisang dan cokelat meleleh. Satu porsi isi 3.',
+    price: 10000,
+    category: 'snack',
+    image: '/images/Bolen Pisang.jpg',
+  },
 ]
 
 export const categories = [
   { id: 'semua', label: 'Semua' },
   { id: 'makanan', label: 'Makanan' },
   { id: 'minuman', label: 'Minuman' },
+  { id: 'aneka-es', label: 'Aneka Es' },
   { id: 'snack', label: 'Snack' },
   { id: 'dessert', label: 'Dessert' },
 ] as const

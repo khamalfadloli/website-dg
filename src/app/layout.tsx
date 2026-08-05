@@ -1,5 +1,6 @@
-import type { Metadata } from "next"
+import type { Metadata, Viewport } from "next"
 import { Be_Vietnam_Pro, Plus_Jakarta_Sans } from "next/font/google"
+import MobileActionBar from "@/components/MobileActionBar"
 import "./globals.css"
 
 const beVietnamPro = Be_Vietnam_Pro({
@@ -16,6 +17,10 @@ const plusJakartaSans = Plus_Jakarta_Sans({
   display: "swap",
 })
 
+export const viewport: Viewport = {
+  themeColor: "#920000",
+}
+
 export const metadata: Metadata = {
   title: "Dapoer Girli - Cita Rasa Nusantara Sejak 2019",
   description:
@@ -24,6 +29,14 @@ export const metadata: Metadata = {
     title: "Dapoer Girli - Cita Rasa Nusantara Sejak 2019",
     description:
       "Sarapan otentik Nusantara untuk mengawali harimu. Reservasi & order online.",
+  },
+  formatDetection: {
+    telephone: true,
+  },
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "Dapoer Girli",
   },
   icons: {
     icon: "/favicon.png",
@@ -48,6 +61,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen flex flex-col bg-background text-on-surface font-body antialiased overflow-x-hidden">
         {children}
+        <MobileActionBar />
       </body>
     </html>
   )
