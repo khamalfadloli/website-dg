@@ -3,6 +3,9 @@ import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "/promo",
+  },
   title: "Promo & Pesan Online - GoFood, GrabFood, ShopeeFood | Dapoer Girli",
   description:
     "Pantau promo dan diskon terbaru Dapoer Girli. Pesan sarapan via GoFood, GrabFood, dan ShopeeFood untuk antar instan.",

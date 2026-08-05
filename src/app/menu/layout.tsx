@@ -1,6 +1,9 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "/menu",
+  },
   title: "Menu Sarapan Yogyakarta - 27+ Menu Otentik | Dapoer Girli",
   description:
     "Jelajahi menu sarapan Dapoer Girli: Nasi Liwet, Nasi Gudeg, Lontong Opor, Bubur Ayam, Selat Solo, Aneka Es, dan Snack. Harga mulai Rp3.000. Buka 05.00-13.00 WIB di Danurejan, Yogyakarta.",

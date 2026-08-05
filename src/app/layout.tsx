@@ -23,6 +23,9 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://dapoergirli.shop"),
+  alternates: {
+    canonical: "/",
+  },
   title: "Dapoer Girli - Cita Rasa Nusantara Sejak 2019",
   description:
     "Sarapan otentik Nusantara di Jl. Tegal Panggung no.30, Danurejan, Yogyakarta. Buka setiap hari 05.00-13.00 WIB. Pesan antar lewat GoFood, GrabFood, dan ShopeeFood.",

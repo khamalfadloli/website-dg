@@ -3,6 +3,9 @@ import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "/lokasi",
+  },
   title:
     "Lokasi & Jam Buka - Jl. Tegal Panggung no.30 Danurejan Yogyakarta | Dapoer Girli",
   description:

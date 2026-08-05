@@ -3,6 +3,9 @@ import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "/tentang",
+  },
   title: "Tentang Kami - Resep Warisan Sejak 2019 | Dapoer Girli",
   description:
     "Cerita Dapoer Girli: warung sarapan di Yogyakarta yang menyajikan resep warisan Nusantara sejak 2019 dengan cita rasa homemade.",
