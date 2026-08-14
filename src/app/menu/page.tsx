@@ -4,14 +4,31 @@ import { useEffect, useRef, useState } from "react"
 import Image from "next/image"
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
+import CartBubble from "@/components/CartBubble"
+import CartModal from "@/components/CartModal"
 import { menuItems, categories } from "@/lib/menu-data"
+import {
+  addItem,
+  countItems,
+  removeItem,
+  setQty,
+  type Cart,
+} from "@/lib/cart"
 
 const CHIP_OFFSET = 140
 
 export default function MenuPage() {
   const [activeCategory, setActiveCategory] = useState("semua")
+  const [cart, setCart] = useState<Cart>({})
+  const [cartOpen, setCartOpen] = useState(false)
   const sectionRefs = useRef(new Map<string, HTMLElement>())
   const chipRefs = useRef(new Map<string, HTMLButtonElement>())
+
+  const handleAdd = (itemId: string) => setCart((c) => addItem(c, itemId))
+  const handleSetQty = (itemId: string, qty: number) =>
+    setCart((c) => setQty(c, itemId, qty))
+  const handleRemove = (itemId: string) =>
+    setCart((c) => removeItem(c, itemId))
 
   const sections = categories.filter((cat) => cat.id !== "semua")
 
@@ -59,6 +76,19 @@ export default function MenuPage() {
       .get(id)
       ?.scrollIntoView({ behavior: "smooth", block: "start" })
   }
+
+  useEffect(() => {
+    const itemId = new URLSearchParams(window.location.search).get("item")
+    if (!itemId) return
+    const item = menuItems.find((i) => i.id === itemId)
+    if (!item) return
+    const timer = setTimeout(() => {
+      document
+        .getElementById(`section-${item.category}`)
+        ?.scrollIntoView({ behavior: "smooth", block: "start" })
+    }, 150)
+    return () => clearTimeout(timer)
+  }, [])
 
   return (
     <>
@@ -176,14 +206,16 @@ export default function MenuPage() {
                           <span className="font-headline text-lg font-semibold text-secondary">
                             Rp {item.price.toLocaleString("id-ID")}
                           </span>
-                          <a
-                            href="https://wa.me/62895602433100"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="bg-primary text-white text-xs font-bold px-4 py-2 min-h-11 inline-flex items-center justify-center rounded-full hover:bg-primary-fixed-dim hover:text-on-primary-fixed transition-all active:scale-95"
+                          <button
+                            type="button"
+                            onClick={() => handleAdd(item.id)}
+                            className="inline-flex items-center justify-center gap-1.5 bg-primary text-white text-xs font-bold px-4 py-2 min-h-11 rounded-full hover:bg-primary-fixed-dim hover:text-on-primary-fixed transition-all active:scale-95"
                           >
-                            Pesan Via WA
-                          </a>
+                            <span className="material-symbols-outlined text-base">
+                              add
+                            </span>
+                            Tambah
+                          </button>
                         </div>
                       </div>
                     </article>
@@ -194,6 +226,16 @@ export default function MenuPage() {
           })}
         </div>
       </main>
+
+      <CartBubble count={countItems(cart)} onOpen={() => setCartOpen(true)} />
+      <CartModal
+        open={cartOpen}
+        cart={cart}
+        items={menuItems}
+        onClose={() => setCartOpen(false)}
+        onSetQty={handleSetQty}
+        onRemove={handleRemove}
+      />
 
       <Footer />
     </>

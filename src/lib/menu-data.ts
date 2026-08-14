@@ -11,7 +11,7 @@ export const menuItems: MenuItem[] = [
   {
     id: 'nasi-liwet',
     name: 'Nasi Liwet',
-    description: 'Nasi gurih khas Solo dengan santan, daun salam, dan sereh. Disajikan hangat dengan lauk pilihan.',
+    description: 'Nasi liwet khas solo dengan sambal goreng krecek yang menggugah selera, sayur labu siam dan kuahnya yang kaya rasa, telur ayam utuh dan suwiran ayam sebagai lauk pendampingnya, bersama cabe, kerupuk udang, dan taburan bawang goreng yang membuat nikmatnya semakin paripurna.',
     price: 16000,
     category: 'makanan',
     image: '/images/Nasi Liwet.jpg',
@@ -19,7 +19,7 @@ export const menuItems: MenuItem[] = [
   {
     id: 'lontong-opor',
     name: 'Lontong Opor',
-    description: 'Lontong lembut dengan kuah opor ayam santan kental, dilengkapi sambal goreng kentang dan kerupuk.',
+    description: 'Kuah opor santan yang gurih dan harum rempah membalut lontong lembut, ditemani telur ayam utuh, suwiran ayam, dan sambal goreng krecek yang pedas menggugah — taburan bawang goreng serta kerupuk udang menutupnya dengan renyah.',
     price: 16000,
     category: 'makanan',
     image: '/images/Lontong Opor.jpg',
@@ -27,7 +27,7 @@ export const menuItems: MenuItem[] = [
   {
     id: 'lontong-sayur',
     name: 'Lontong Sayur',
-    description: 'Lontong dengan sayur labu siam dan kuah santan kuning, telur rebus, dan sambal kemiri.',
+    description: 'Lontong berselimut sayur labu siam dengan kuah santannya yang kaya rasa, telur ayam utuh di tengah, sambal goreng krecek yang menggugah selera, dan kerupuk udang di sisi.',
     price: 16000,
     category: 'makanan',
     image: '/images/Lontong Sayur.jpg',
@@ -35,7 +35,7 @@ export const menuItems: MenuItem[] = [
   {
     id: 'nasi-uduk',
     name: 'Nasi Uduk',
-    description: 'Nasi uduk Betawi harum dengan lauk: bihun goreng, orek tempe, kering kentang, dan sambal.',
+    description: 'Harum nasi santan yang menggoda, berpadu kering kentang dan kering tempe yang gurih, abon lembut, telur dadar iris, dan sambel — kerupuk udang melengkapinya.',
     price: 16000,
     category: 'makanan',
     image: '/images/Nasi Uduk.jpg',
@@ -43,7 +43,7 @@ export const menuItems: MenuItem[] = [
   {
     id: 'nasi-langgi',
     name: 'Nasi Langgi',
-    description: 'Nasi langgi khas Solo dengan aneka lauk: sayur gudeg, suwiran ayam, krecek, telur pindang, dan sambal goreng kentang.',
+    description: 'Nasi putih dengan serundeng kelapa yang gurih, kering kentang dan kering tempe renyah, telur dadar iris, sambel, serta kerupuk udang — pilihan yang pas untuk mengawali hari.',
     price: 16000,
     category: 'makanan',
     image: '/images/Nasi Langgi.jpg',
@@ -51,7 +51,7 @@ export const menuItems: MenuItem[] = [
   {
     id: 'garang-asem',
     name: 'Garang Asem',
-    description: 'Ayam kampung dibungkus daun pisang dengan kuah asam pedas segar, lengkap dengan cabai dan tomat.',
+    description: 'Kuah santan gurih beradu dengan asam segar belimbing wuluh dan tomat, sayap ayam yang empuk, plus cabe yang memberi sensasi pedas membangunkan selera — kerupuk udang siap menemani.',
     price: 20000,
     category: 'makanan',
     image: '/images/Garang Asem.jpg',
@@ -59,7 +59,7 @@ export const menuItems: MenuItem[] = [
   {
     id: 'gudeg',
     name: 'Nasi Gudeg',
-    description: 'Gudeg nangka muda manis khas Jogja, disajikan dengan kuah santan, ayam suwir, telur pindang, dan krecek.',
+    description: 'Manis gurihnya gudeg khas Jogja di atas nasi putih hangat, bersama suwiran ayam, tahu, telur utuh, dan sambal goreng krecek — kerupuk udang melengkapi di samping.',
     price: 20000,
     category: 'makanan',
     image: '/images/Nasi Gudeg.jpg',
@@ -67,7 +67,7 @@ export const menuItems: MenuItem[] = [
   {
     id: 'bubur-ayam',
     name: 'Bubur Ayam',
-    description: 'Bubur ayam gurih dengan topping lengkap: suwiran ayam, cakwe, kacang kedelai, bawang goreng, dan seledri.',
+    description: 'Bubur ayam gurih dengan topping lengkap: suwiran ayam, kering kentang, kacang kedelai, bawang goreng, dan seledri.',
     price: 12000,
     category: 'makanan',
     image: '/images/Bubur Ayam.jpeg',
@@ -91,7 +91,7 @@ export const menuItems: MenuItem[] = [
   {
     id: 'ayam-gecek',
     name: 'Ayam Gecek',
-    description: 'Ayam suwir pedas khas Lombok dengan plecing kangkung, nasi hangat, dan sambal tomat segar.',
+    description: 'Ayam paha/dada digecek di atas cobek sampai bumbu meresap, disajikan dengan nasi putih, lalapan segar, dan kerupuk udang — pedasnya bikin nagih.',
     price: 20000,
     category: 'makanan',
     image: '/images/Ayam Gecek.jpg',
@@ -99,7 +99,7 @@ export const menuItems: MenuItem[] = [
   {
     id: 'nasi-goreng-rumahan',
     name: 'Nasi Goreng Rumahan',
-    description: 'Nasi goreng rumahan dengan bumbu sederhana, telur, sosis, dan kerupuk. Cita rasa masakan ibu.',
+    description: 'Nasi goreng rumahan dengan bumbu sederhana, telur, suwiran ayam, dan kerupuk. Cita rasa masakan ibu.',
     price: 15000,
     category: 'makanan',
     image: '/images/Nasi Goreng Rumahan.jpeg',

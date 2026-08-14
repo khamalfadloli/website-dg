@@ -32,7 +32,9 @@ const merchantLinks = [
 ]
 
 export default function HomePage() {
-  const featuredItems = menuItems.slice(0, 3)
+  const featuredItems = ["nasi-liwet", "lontong-opor", "nasi-uduk"]
+    .map((id) => menuItems.find((item) => item.id === id))
+    .filter((item): item is (typeof menuItems)[number] => Boolean(item))
 
   return (
     <>
@@ -184,14 +186,15 @@ export default function HomePage() {
                     <span className="font-body text-base font-bold text-secondary">
                       Rp {item.price.toLocaleString("id-ID")}
                     </span>
-                    <a
-                      href="https://wa.me/62895602433100"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="bg-primary text-white text-xs font-bold px-4 py-2 min-h-11 inline-flex items-center justify-center rounded-full hover:bg-primary-fixed-dim hover:text-on-primary-fixed transition-all active:scale-95"
+                    <Link
+                      href={`/menu?item=${item.id}`}
+                      className="inline-flex items-center justify-center gap-1.5 bg-primary text-white text-xs font-bold px-4 py-2 min-h-11 rounded-full hover:bg-primary-fixed-dim hover:text-on-primary-fixed transition-all active:scale-95"
                     >
-                      Pesan Via WA
-                    </a>
+                      <span className="material-symbols-outlined text-base">
+                        add
+                      </span>
+                      Tambah
+                    </Link>
                   </div>
                 </div>
               </article>
