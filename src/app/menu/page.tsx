@@ -202,7 +202,7 @@ export default function MenuPage() {
                         <p className="font-body text-sm text-on-surface-variant flex-grow leading-relaxed">
                           {item.description}
                         </p>
-                        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 mt-auto pt-3 border-t border-surface-container-highest">
+                        <div className="flex items-center justify-between gap-2 mt-auto pt-3 border-t border-surface-container-highest">
                           <span className="font-headline text-lg font-semibold text-secondary">
                             Rp {item.price.toLocaleString("id-ID")}
                           </span>

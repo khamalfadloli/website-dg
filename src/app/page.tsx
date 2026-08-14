@@ -182,7 +182,7 @@ export default function HomePage() {
                   <p className="font-body text-base text-on-surface-variant line-clamp-2 leading-relaxed">
                     {item.description}
                   </p>
-                  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 pt-3 border-t border-surface-variant">
+                  <div className="flex items-center justify-between gap-2 pt-3 border-t border-surface-variant">
                     <span className="font-body text-base font-bold text-secondary">
                       Rp {item.price.toLocaleString("id-ID")}
                     </span>
